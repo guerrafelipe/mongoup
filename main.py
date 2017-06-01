@@ -13,7 +13,7 @@ Get collections from source
 
 def import_docs():
     #source
-    uri = "mongodb://%s:%s@%s" % (quote_plus("root"), quote_plus("t6xEx2LFe3dp"), "54.233.189.15:27017")
+    uri = "mongodb://%s:%s@%s" % (quote_plus("username"), quote_plus("password"), "host")
     source_client = MongoClient(uri)
     source_db = source_client.s2_chat_development
     source_answers = source_db.answers
@@ -29,7 +29,7 @@ def export_docs():
     """
     Export to a document
     """
-    uri = "mongodb://%s:%s@%s" % (quote_plus("root"), quote_plus("t6xEx2LFe3dp"), "54.233.189.15:27017")
+    uri = "mongodb://%s:%s@%s" % (quote_plus("username"), quote_plus("password"), "host")
     source_client = MongoClient(uri)
     source_db = source_client.s2_chat_production
     source_answers = source_db.answers
