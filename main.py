@@ -34,7 +34,7 @@ def export_docs():
     source_db = source_client.s2_chat_production
     source_answers = source_db.answers
     
-    target_file = open("az_respostas_backup_" + time.strftime("%d-%m-%Y") + ".json", "wb")
+    target_file = open("file_name_init" + time.strftime("%d-%m-%Y") + ".json", "wb")
     backup_string, docs_count = "", 0
     for a in source_answers.find():
         backup_string += str(a)
