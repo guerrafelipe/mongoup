@@ -4,9 +4,6 @@ from urllib import quote_plus
 import json
 from clint.textui import colored
 
-#source = mongodb://app_dev_user:t{;as]N8mUk:27af@54.233.189.15:27017/s2_chat_development
-#target = mongodb://app_prod_user:$G32Zf2d7G'j]]>}@54.233.189.15:27017/s2_chat_production
-
 """
 Get collections from source
 """
